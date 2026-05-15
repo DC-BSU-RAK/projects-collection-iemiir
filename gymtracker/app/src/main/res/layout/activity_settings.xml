@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0A0A0A"
+    android:padding="32dp">
+
+    <!-- Icon -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_icon"
+        android:textSize="56sp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_subtitle"
+        android:textSize="14sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="36dp" />
+
+    <!-- Dark Mode Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#1A1A1A"
+        android:padding="16dp"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dark_mode_label"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <!-- SwitchCompat replaces Switch to fix the widget warning -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchDarkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:minWidth="48dp"
+            android:thumbTint="#E53935"
+            android:trackTint="#555555" />
+
+    </LinearLayout>
+
+    <!-- Motivation Messages Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#1A1A1A"
+        android:padding="16dp"
+        android:layout_marginBottom="36dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/motivation_label"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <!-- Larger touch target for CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxMotivation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:buttonTint="#E53935"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:text="@string/save_settings"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E88E5"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBackHomeSettings"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:text="@string/back_home"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2C2C2C" />
+
+</LinearLayout>

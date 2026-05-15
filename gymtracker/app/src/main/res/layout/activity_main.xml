@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💪"
+            android:textSize="56sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIRR'S GYM"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvWelcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome! 💪"
+            android:textSize="15sp"
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvDailyQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading quote..."
+            android:textSize="13sp"
+            android:textColor="#FFD700"
+            android:gravity="center"
+            android:background="#1A1A1A"
+            android:padding="14dp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnPushDay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Push Day 🔥"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E53935"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnPullDay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Pull Day 💪"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8E24AA"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnLegDay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Leg Day 🦵"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00897B"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:id="@+id/btnSavedWorkouts"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Saved Workouts ⭐"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F57F17"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="My Profile 👤"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Settings ⚙️"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="ℹ️ About"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2C2C2C"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Logout 🚪"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B71C1C"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

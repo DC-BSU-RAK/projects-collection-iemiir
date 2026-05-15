@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐"
+            android:textSize="52sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Workouts ⭐"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your favourite sessions"
+            android:textSize="14sp"
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Saved workout content -->
+        <TextView
+            android:id="@+id/tvSavedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No workouts saved yet."
+            android:textSize="14sp"
+            android:textColor="#DDDDDD"
+            android:lineSpacingExtra="6dp"
+            android:background="#1A1A1A"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Clear All Button -->
+        <Button
+            android:id="@+id/btnClearSaved"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Clear All Workouts 🗑️"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B71C1C"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBackHomeSaved"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Back Home ⬅️"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2C2C2C"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
